@@ -1,39 +1,53 @@
 <template>
-  <div class="profile-hero">
-    <!-- 左侧 -->
-    <div class="profile-left">
-      <div class="avatar-box">
-        <span class="logo-mark">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="20" fill="#23283B"/>
-            <path d="M12 14C12 11.7909 13.7909 10 16 10H24C26.2091 10 28 11.7909 28 14V26C28 28.2091 26.2091 30 24 30H16C13.7909 30 12 28.2091 12 26V14Z" fill="#FFD15C"/>
-          </svg>
-        </span>
-        <img class="avatar" src="/static/touxiang.png" alt="头像" />
-      </div>
-      <div class="profile-name">嘉威<br />Oceankafty</div>
-      <div class="yellow-underline"></div>
-      <div class="profile-social">
-        <a href="#" class="icon"><i class="fab fa-dribbble"></i></a>
-        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-    <!-- 右侧 -->
-    <div class="profile-right">
-      <div class="profile-intro">
-        <div class="intro-label">- 个人简介</div>
-        <div class="intro-title">前端开发工程师，现居中国。</div>
-        <div class="intro-desc">
-          热爱编程，专注于前端技术，喜欢探索新技术和设计美学。拥有丰富的项目开发经验，致力于打造高质量的 Web 应用。
+  <div class="home-page">
+    <div class="profile-hero">
+      <!-- 左侧 -->
+      <div class="profile-left">
+        <div class="avatar-box">
+          <span class="logo-mark">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="20" fill="#23283B"/>
+              <path d="M12 14C12 11.7909 13.7909 10 16 10H24C26.2091 10 28 11.7909 28 14V26C28 28.2091 26.2091 30 24 30H16C13.7909 30 12 28.2091 12 26V14Z" fill="#FFD15C"/>
+            </svg>
+          </span>
+          <img class="avatar" src="/static/touxiang.png" alt="头像" />
         </div>
-        <a href="#" class="my-story-btn">我的故事 <i class="fas fa-arrow-right"></i></a>
+        <div class="profile-name">嘉威<br />Oceankafty</div>
+        <div class="yellow-underline"></div>
+        <div class="profile-social">
+          <a href="#" class="icon"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <!-- 右侧 -->
+      <div class="profile-right">
+        <div class="profile-intro">
+          <div class="intro-label">- 个人简介</div>
+          <div class="intro-title">前端开发工程师，现居中国。</div>
+          <div class="intro-desc">
+            热爱编程，专注于前端技术，喜欢探索新技术和设计美学。拥有丰富的项目开发经验，致力于打造高质量的 Web 应用。
+          </div>
+          <a href="#" class="my-story-btn">我的故事 <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.home-page {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .profile-hero {
   display: flex;
   align-items: center;

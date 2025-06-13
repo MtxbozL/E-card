@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/works',
       name: 'Works',
-      component: () => import('../views/Works.vue')
+      component: () => import('../views/Works.vue') // 确认路径正确
     },
     {
       path: '/blog',
@@ -27,6 +27,28 @@ const router = createRouter({
       path: '/Repository',
       name: 'Repository',
       component: () => import('../views/Repository.vue')
+    },
+    {
+      path: '/work',
+      name: 'Dashboard',
+      component: () => import('@/views/Work/Dashboard.vue')
+    },
+    // 重定向旧路径到新的统一界面
+    {
+      path: '/work/bill',
+      redirect: '/work'
+    },
+    {
+      path: '/work/account',
+      redirect: '/work'
+    },
+    {
+      path: '/work/category',
+      redirect: '/work'
+    },
+    {
+      path: '/work/statistics',
+      redirect: '/work'
     },
   //   {
   //   path: '/images',
